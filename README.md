@@ -1,4 +1,4 @@
-//@version=5
+//@version=6
 indicator("SMC Smart Money Concepts v6", overlay=true)
 
 // === Inputs ===
