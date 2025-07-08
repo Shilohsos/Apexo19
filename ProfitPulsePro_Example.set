@@ -1,0 +1,99 @@
+//+------------------------------------------------------------------+
+//|                                  ProfitPulsePro_Example.set     |
+//|                                 Copyright 2024, Shilohsos       |
+//|                                             https://github.com/Shilohsos |
+//+------------------------------------------------------------------+
+// Example configuration file for ProfitPulsePro EA
+// Save this as a .set file in your MT5 presets folder
+// Load it when attaching the EA to a chart
+
+; General Settings
+EnableTrading=true
+TradingStyle=1
+LotSize=0.10
+MagicNumber=123456
+TradeComment=ProfitPulsePro
+
+; Market Regime Detection
+UseMarketRegime=true
+RegimePeriod=20
+TrendThreshold=0.60
+VolatilityPeriod=14
+VolatilityMultiplier=1.50
+
+; Smart Entry Filters
+UseSmartFilters=true
+UseRSIFilter=true
+RSI_Period=14
+RSI_Oversold=30.00
+RSI_Overbought=70.00
+UseMAFilter=true
+MA_Period=50
+MA_Method=1
+UseVolumeFilter=true
+VolumeMultiplier=1.20
+
+; Dynamic Position Sizing
+UseDynamicSizing=true
+RiskPercentage=2.00
+MaxLotSize=1.00
+MinLotSize=0.01
+UseVolatilityAdjustment=true
+UseEquityAdjustment=true
+
+; Advanced Take Profit Management
+UseAdvancedTP=true
+TP_Level1=50.00
+TP_Level2=100.00
+TP_Level3=150.00
+TP_Portion1=0.30
+TP_Portion2=0.40
+UseTrailingStop=true
+TrailingStart=30.00
+TrailingStep=10.00
+UseBreakEven=true
+BreakEvenLevel=20.00
+
+; Enhanced Risk Management
+UseEnhancedRisk=true
+MaxDailyLoss=5.00
+MaxDrawdown=10.00
+MaxConcurrentTrades=3
+StopLoss=30.00
+UseNewsFilter=true
+NewsFilterMinutes=30
+UseTradingHours=true
+TradingStartHour=8
+TradingEndHour=18
+
+; Example Configurations for Different Trading Styles:
+
+; CONSERVATIVE PRESET
+; RiskPercentage=1.00
+; MaxDailyLoss=3.00
+; MaxConcurrentTrades=1
+; TrailingStart=25.00
+; TrailingStep=5.00
+
+; AGGRESSIVE PRESET
+; RiskPercentage=3.00
+; MaxDailyLoss=8.00
+; MaxConcurrentTrades=5
+; TrailingStart=40.00
+; TrailingStep=15.00
+
+; SCALPING PRESET
+; RiskPercentage=1.50
+; TP_Level1=10.00
+; TP_Level2=20.00
+; TP_Level3=30.00
+; TrailingStart=8.00
+; TrailingStep=3.00
+
+; SWING TRADING PRESET
+; RiskPercentage=2.50
+; TP_Level1=100.00
+; TP_Level2=200.00
+; TP_Level3=300.00
+; TrailingStart=80.00
+; TrailingStep=20.00
